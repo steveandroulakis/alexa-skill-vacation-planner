@@ -127,7 +127,7 @@ const LaunchRequestHandler = {
 };
 
 // triggered on phrases such as
-// 'Alexa, tell vacation planner dry i'm going on vacation june second'
+// 'Alexa, tell vacation planner I’m going on vacation june second'
 // Saves this information into DynamoDb
 const CaptureVacationIntentHandler = {
     canHandle(handlerInput) {
