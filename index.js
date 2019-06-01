@@ -111,6 +111,7 @@ const HasVacationLaunchRequestHandler = {
     }
 };
 
+// triggered if the user opens the skill and hasn't set their vacation date
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === "LaunchRequest";
@@ -125,6 +126,9 @@ const LaunchRequestHandler = {
     }
 };
 
+// triggered on phrases such as
+// 'Alexa, tell vacation planner dry i'm going on vacation june second'
+// Saves this information into DynamoDb
 const CaptureVacationIntentHandler = {
     canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
