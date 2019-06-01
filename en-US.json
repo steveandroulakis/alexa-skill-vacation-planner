@@ -1,0 +1,58 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "vacation planner",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CaptureVacationIntentHandler",
+                    "slots": [
+                        {
+                            "name": "month",
+                            "type": "AMAZON.Month"
+                        },
+                        {
+                            "name": "day",
+                            "type": "AMAZON.Ordinal"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "my vacation is {month} {day} {year}",
+                        "my vacation is {month} {day}",
+                        "my holiday is on {month} {day} {year}",
+                        "my vacation is on {month} {day} {year}",
+                        "I'm going on holiday {month} {day} {year}",
+                        "my vacation is on {month} {day}",
+                        "I'm going on holiday {month} {day}",
+                        "{month} {day}",
+                        "{month} {day} {year}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

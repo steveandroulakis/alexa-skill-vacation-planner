@@ -1,0 +1,47 @@
+{
+    "document": {
+        "type": "APL",
+        "version": "1.0",
+        "theme": "dark",
+        "import": [],
+        "resources": [],
+        "styles": {},
+        "layouts": {},
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "width": "100vw",
+                    "height": "100vh",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "width": "100vw",
+                            "height": "100vh",
+                            "source": "https://images.unsplash.com/photo-1559311745-a57f6233488e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2017&q=80",
+                            "scale": "best-fill",
+                            "overlayColor": "rgba(0,0,0,0.5)",
+                            "position": "absolute"
+                        },
+                        {
+                            "type": "Text",
+                            "paddingTop": "150",
+                            "textAlign": "center",
+                            "fontSize": "90dp",
+                            "text": "${payload.data.message}",
+                            "color": "pink"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "datasources": {
+        "data": 
+            {
+                "message": "VACATION TIME!"}
+            }
+}
