@@ -46,10 +46,13 @@ Link the skill with the new lambda function
 ## Usage
 
 Set your vacation date with the utterance:
+
 `tell vacation planner my vacation is december fifteen`
 
 Once a date is saved, you can find out how close you are to your vacation by opening
 the skill:
+
 `open vacation planner`
+
 Once you're within a day of your vacation, you'll get a hype screen
 and some sound effects :)
